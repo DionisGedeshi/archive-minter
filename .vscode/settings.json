@@ -1,0 +1,5 @@
+{
+  "svelte.enable-ts-plugin": true,
+  "editor.fontFamily": "'JetBrains Mono', monospace",
+  "editor.fontSize": 15
+}
