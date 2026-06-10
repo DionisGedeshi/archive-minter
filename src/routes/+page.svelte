@@ -1,7 +1,7 @@
 <script lang="ts">
   import { invoke } from "@tauri-apps/api/core";
   import { onMount, tick } from "svelte";
-  import { open } from "@tauri-apps/plugin-shell";
+  import { openUrl } from "@tauri-apps/plugin-opener";
 
   type Article = {
     id: number;
@@ -357,7 +357,7 @@
   }
 
   async function openSupportLink() {
-    await open("https://dionisg.gumroad.com/l/hnqqrp");
+    await openUrl('https://dionisg.gumroad.com/l/hnqqrp')
   }
 </script>
 
